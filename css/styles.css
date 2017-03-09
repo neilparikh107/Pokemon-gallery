@@ -1,0 +1,40 @@
+.pokemon {
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+form {
+  text-align: center;
+  padding-bottom: 3rem;
+  padding-top: 3rem
+}
+
+body {
+  background: linear-gradient(45deg, red ,yellow, orange);
+  background-repeat: no-repeat;
+}
+
+.name {
+  position: absolute;
+  top: 3rem;
+  left: 40%
+}
+
+.page-tab {
+  text-align: center;
+}
+
+@media (max-width:768px) {
+  .change-for-mobile{
+    -webkit-column-count: 2;
+     -moz-column-count: 2;
+          column-count: 2;
+  }
+
+  .details {
+    text-align: left;
+    margin-top: 2rem
+  }
+
+}
