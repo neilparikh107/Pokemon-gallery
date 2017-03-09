@@ -19,13 +19,13 @@
 					</div>
 				</form>
         <div class="row">
-          <div dir-paginate="user in users.results|filter:search|itemsPerPage:20">
+          <div dir-paginate="pokemon in pokemons.results|filter:search|itemsPerPage:20">
             <div class="pokemon col-lg-3 col-md-6 col-sm-6 col-sm-12">
               <div class="change-for-mobile">
-                  <div><img src="/images/{{user.url.split('pokemon/')[1].split('/')[0]}}.png" /></div>
+                  <div><img src="/images/{{pokemon.url.split('pokemon/')[1].split('/')[0]}}.png" /></div>
                   <div class="details">
-                    <div><strong>#{{pad(user.url.split("pokemon/")[1].split("/")[0],3) }}</strong></div>
-						         <div>{{user.name}}</div>
+                    <div><strong>#{{pad(pokemon.url.split("pokemon/")[1].split("/")[0],3) }}</strong></div>
+						         <div>{{pokemon.name}}</div>
                   </div>
               </div>
             </div>

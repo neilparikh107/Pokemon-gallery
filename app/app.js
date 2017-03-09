@@ -1,9 +1,9 @@
 var app = angular.module('pokedex', ['angularUtils.directives.dirPagination']);
 
 app.controller('listdata',function($scope, $http){
-	$scope.users = []; //declare an empty array
+	$scope.pokemons = []; //declare an empty array
 	$http.get("http://pokeapi.co/api/v2/pokemon/?limit=151").success(function(response){
-		$scope.users = response;  //ajax request to fetch data into $scope.data
+		$scope.pokemons = response;  //ajax request to fetch data into $scope.data
 
   });
   //function for 0 padding numbers
